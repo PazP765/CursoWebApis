@@ -5,6 +5,8 @@ namespace MagicVilla_API.Modelos
 {
     public class Villa
     {
+        //contiene todas las variables, con base a esto se crea la tabla en la BD, las clases en el directorio dto..
+        //..son para cada uno de los modelos ejem: crear no ocupa Id ya que es auto incremental por eso se crea una clase personalizada
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }

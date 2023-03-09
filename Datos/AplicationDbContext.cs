@@ -4,12 +4,13 @@ using Microsoft.EntityFrameworkCore;
 namespace MagicVilla_API.Datos
 {
     public class AplicationDbContext:DbContext
-    {
+    {//esta clase crea la migración y pasa las tablas a la DB
         public AplicationDbContext(DbContextOptions<AplicationDbContext> options):base(options)
         {
             
         }
         public DbSet<Villa> Villas { get; set; }
+        public DbSet<NumeroVilla> NumeroVillas { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

@@ -1,7 +1,7 @@
 ﻿using MagicVilla_API.Modelos.Dto;
 
 namespace MagicVilla_API.Datos
-{
+{//esta clase se creo solo para pruebas
     public static class VillaStore
     {
         public static List<VillaDto> villaList = new List<VillaDto>
